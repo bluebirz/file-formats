@@ -1,6 +1,6 @@
 import json
 
-target_jsonl = "sample_jsonl.json"
+target_jsonl = "../outputs/sample_jsonl.json"
 people = [
     {
         "id": 1,

@@ -2,7 +2,7 @@ import pandas as pd
 import pyarrow as pa
 import pyarrow.parquet as pq
 
-target_parquet = "sample_parquet.parquet"
+target_parquet = "../outputs/sample_parquet.parquet"
 people = [
     {
         "id": 1,

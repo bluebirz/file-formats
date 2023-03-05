@@ -1,6 +1,6 @@
 import csv
 
-target_csv = "sample_csv.csv"
+target_csv = "../outputs/sample_csv.csv"
 header = ["id", "first_name", "last_name", "occupation"]
 people = [
     {
