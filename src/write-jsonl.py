@@ -1,7 +1,6 @@
-import csv
+import json
 
-target_csv = "../outputs/sample_csv.csv"
-header = ["id", "first_name", "last_name", "occupation"]
+target_jsonl = "outputs/sample_jsonl.json"
 people = [
     {
         "id": 1,
@@ -16,8 +15,6 @@ people = [
         "occupation": "Social worker",
     },
 ]
-with open(target_csv, "w", newline="") as file:
-    writer = csv.DictWriter(file, fieldnames=header)
-    writer.writeheader()
+with open(target_jsonl, "w") as file:
     for p in people:
-        writer.writerow(p)
+        file.writelines(json.dumps(p) + "\n")

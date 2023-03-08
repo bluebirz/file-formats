@@ -1,6 +1,8 @@
-import json
+import pandas as pd
+import pyarrow as pa
+import pyarrow.parquet as pq
 
-target_json = "../outputs/sample_json.json"
+target_parquet = "outputs/sample_parquet.parquet"
 people = [
     {
         "id": 1,
@@ -15,5 +17,6 @@ people = [
         "occupation": "Social worker",
     },
 ]
-with open(target_json, "w") as file:
-    file.write(json.dumps(people, indent=2))
+df = pd.json_normalize(people)
+table = pa.Table.from_pandas(df)
+pq.write_table(table, target_parquet)
