@@ -14,9 +14,9 @@
 
 ## blog related
 
-- [EN] [...](...)
-- [TH] [...](...)
-- [Medium] [...](...)
+- [EN] [File formats I've worked with](https://www.bluebirz.net/en/file-formats-ive-worked-with/)
+- [TH] [เล่าเรื่อง File ที่ผมเคยใช้](https://www.bluebirz.net/th/file-formats-ive-worked-with-th/)
+- [Medium] [File formats I’ve worked with](https://medium.com/@bluebirz/file-formats-ive-worked-with-87a2dc288b36)
 
 ## How to run
 
